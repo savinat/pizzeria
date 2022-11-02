@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+
+.logo{
+  margin: 5px;
+  height: 65px;
+  width: 80px;
+  color: black;
+}
+.navbar.navbar-custom {
+  background: black;
+  color: orange;
+  padding-top: 5px;
+}
+.navbar-header a{
+  color: orange;
+  margin-top: 10px;
+  font-size: 2.5em;
+}
+.navbar-nav a{
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+.maincontainer{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+  border: 1px solid #ffeacb;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+footer{
+  text-align: center;
+  color: orange;
+  font-style: italic;
+/*  font-size: 1.25em;*/
+  background-color: #fbfbfb;
+  padding: 3px;
+}
+.pizza-box{
+  border: 1px solid #eeeeee;
+  box-shadow: 1px 1px 2px black, 2px 2px 3px grey;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 280px;
+}
+.veg{
+  width: 20px;
+  height: 20px;
+  margin-left: 30%;
+  background-color: green;
+}
+.nonveg{
+  width: 20px;
+  height: 20px;
+  margin-left: 30%;
+  background-color: red;
+}
+

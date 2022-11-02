@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+<nav class="navbar navbar-inverse navbar-custom">
+    <div class="container">
+      <div class="navbar-header">
+        <img class="logo"
+          src="../assets/PizzeriaLogo.png" >
+        <a class="navbar-brand" [routerLink]="['/']">Pizzeria</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a [routerLink]="['/order']">Order Pizza</a></li>
+        <li><a [routerLink]="['/build']">Build Ur Pizza</a></li>
+      </ul>
+      <button class="btn btn-primary navbar-btn navbar-right" style="font-size:1.25em;color: white;background-color:#ffb128;height:50px;margin-right: 30px;margin-top:10px">
+        <span class="glyphicon glyphicon-shopping-cart" ></span>Shoping cart</button>
+    </div>
+  </nav>
+  <div class="maincontainer">
+  <router-outlet ></router-outlet>
+  </div>
+  <footer>Copyrights @ 2022 Pizzeria . All rights reserved.</footer>
+</div>

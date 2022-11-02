@@ -1,0 +1,33 @@
+<div class="container" style="width: 90%;margin: auto">
+
+  <h5 style="margin-left: 10%">
+    Pizzeria now gives you options to build your own pizza. Customize your pizza by choosing ingredients from the list given below</h5>
+  <table class="table-bordered table-striped table-hover row" style="margin-left: 20% ;">
+    <tr *ngFor="let ingr of ingredients;let i as index;" style="height: 50px">
+      <td class="col-md-5" style="align-content: center;width: 100px">
+        <img src={{ingr.image}} style="width:75px;height:50px;margin-top: 5px;">
+        </td>
+      <td class="col-md-4">
+        <b>
+         {{ingr.tname}}&nbsp;&nbsp;&nbsp;
+        {{ingr.price|currency:'INR'}}
+        </b>
+      </td>
+      <td class="col-md-3">
+          <input type="checkbox" style="margin-right: 10px;background-color: white"
+                 (click)="addIngredient(ingr.price,(ingr.status=ingr.status?false:true))" >
+          <span style="color: orange;">Add</span>
+      </td>
+    </tr>
+    <tr >
+      <p style="margin-top:5px;color:darkblue;margin-left: 10%;font-size: 1.5em"><b>Total Cost : {{totalCost}}</b></p>
+      <button (click)="build()"
+              style="margin-top:5px;margin-left: 90%;margin-bottom:5px;background-color: black;color: orange;font-size: 1.5em"
+              class="btn btn-warning">
+        Build Ur Pizza</button>
+
+    </tr>
+  </table>
+
+
+</div>

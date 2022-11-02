@@ -1,0 +1,26 @@
+<div class="container" style="margin: auto;width: 90%">
+  <table class="row" >
+    <tr *ngFor="let p of pizzas" class="col-12 col-md-6  pizza-box">
+      <div class="col-md-8">
+        <td style="font-size: 1.5em">
+          <b>{{p.name}}
+            <div *ngIf="(p.type == 'veg')" class="veg"></div>
+            <div *ngIf="(p.type == 'nonveg')" class="nonveg"></div>
+            <p style="font-size:.75em;padding-top: 40px;">{{p.price|currency:'INR'}}</p>
+          </b>
+        </td>
+        <td style="padding-left: 10px">
+          <p>{{p.description}}</p>
+          <p><b>Ingredients : </b>{{p.ingredients}}</p>
+          <p><b>Toppings : </b>{{p.topping}}</p>
+        </td>
+
+
+      </div>
+      <div class="col-md-4">
+        <td><img src={{p.image}} style="width:150px;height:150px;margin-top: 5px"></td>
+        <button style="margin-left: 25px;margin-bottom: 5px" class="btn btn-warning">Add to Cart</button>
+      </div>
+    </tr>
+  </table>
+</div>
